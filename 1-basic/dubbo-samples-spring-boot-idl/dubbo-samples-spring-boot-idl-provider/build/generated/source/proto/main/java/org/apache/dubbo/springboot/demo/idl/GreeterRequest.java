@@ -4,11 +4,11 @@
 package org.apache.dubbo.springboot.demo.idl;
 
 /**
- * Protobuf type {@code org.apache.dubbo.springboot.demo.idl.GreeterRequest}
+ * Protobuf type {@code test.GreeterRequest}
  */
 public final class GreeterRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:org.apache.dubbo.springboot.demo.idl.GreeterRequest)
+    // @@protoc_insertion_point(message_implements:test.GreeterRequest)
     GreeterRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use GreeterRequest.newBuilder() to construct.
@@ -28,13 +28,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_org_apache_dubbo_springboot_demo_idl_GreeterRequest_descriptor;
+    return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_test_GreeterRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_org_apache_dubbo_springboot_demo_idl_GreeterRequest_fieldAccessorTable
+    return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_test_GreeterRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             org.apache.dubbo.springboot.demo.idl.GreeterRequest.class, org.apache.dubbo.springboot.demo.idl.GreeterRequest.Builder.class);
   }
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
+      com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       name_ = s;
@@ -68,7 +68,7 @@ private static final long serialVersionUID = 0L;
       getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
+      com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
       name_ = b;
@@ -82,12 +82,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) {
-        return true;
-    }
-    if (isInitialized == 0) {
-        return false;
-    }
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
 
     memoizedIsInitialized = 1;
     return true;
@@ -105,9 +101,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
-    if (size != -1) {
-        return size;
-    }
+    if (size != -1) return size;
 
     size = 0;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -129,12 +123,8 @@ private static final long serialVersionUID = 0L;
     org.apache.dubbo.springboot.demo.idl.GreeterRequest other = (org.apache.dubbo.springboot.demo.idl.GreeterRequest) obj;
 
     if (!getName()
-        .equals(other.getName())) {
-        return false;
-    }
-    if (!getUnknownFields().equals(other.getUnknownFields())) {
-        return false;
-    }
+        .equals(other.getName())) return false;
+    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
@@ -243,21 +233,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code org.apache.dubbo.springboot.demo.idl.GreeterRequest}
+   * Protobuf type {@code test.GreeterRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:org.apache.dubbo.springboot.demo.idl.GreeterRequest)
+      // @@protoc_insertion_point(builder_implements:test.GreeterRequest)
       org.apache.dubbo.springboot.demo.idl.GreeterRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_org_apache_dubbo_springboot_demo_idl_GreeterRequest_descriptor;
+      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_test_GreeterRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_org_apache_dubbo_springboot_demo_idl_GreeterRequest_fieldAccessorTable
+      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_test_GreeterRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               org.apache.dubbo.springboot.demo.idl.GreeterRequest.class, org.apache.dubbo.springboot.demo.idl.GreeterRequest.Builder.class);
     }
@@ -283,7 +273,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_org_apache_dubbo_springboot_demo_idl_GreeterRequest_descriptor;
+      return org.apache.dubbo.springboot.demo.idl.GreeterOuterClass.internal_static_test_GreeterRequest_descriptor;
     }
 
     @java.lang.Override
@@ -326,9 +316,7 @@ private static final long serialVersionUID = 0L;
     }
 
     public Builder mergeFrom(org.apache.dubbo.springboot.demo.idl.GreeterRequest other) {
-      if (other == org.apache.dubbo.springboot.demo.idl.GreeterRequest.getDefaultInstance()) {
-          return this;
-      }
+      if (other == org.apache.dubbo.springboot.demo.idl.GreeterRequest.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         bitField0_ |= 0x00000001;
@@ -387,7 +375,6 @@ private static final long serialVersionUID = 0L;
      * <code>string name = 1;</code>
      * @return The name.
      */
-    @Override
     public java.lang.String getName() {
       java.lang.Object ref = name_;
       if (!(ref instanceof java.lang.String)) {
@@ -404,12 +391,11 @@ private static final long serialVersionUID = 0L;
      * <code>string name = 1;</code>
      * @return The bytes for name.
      */
-    @Override
     public com.google.protobuf.ByteString
         getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         name_ = b;
@@ -468,10 +454,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:org.apache.dubbo.springboot.demo.idl.GreeterRequest)
+    // @@protoc_insertion_point(builder_scope:test.GreeterRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:org.apache.dubbo.springboot.demo.idl.GreeterRequest)
+  // @@protoc_insertion_point(class_scope:test.GreeterRequest)
   private static final org.apache.dubbo.springboot.demo.idl.GreeterRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new org.apache.dubbo.springboot.demo.idl.GreeterRequest();
